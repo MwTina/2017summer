@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Sign up</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <form name="RegForm" method="post" action="reg.php" onSubmit="return InputCheck(this)">
+
+        <h2 class="form-signin-heading">Please register </h2>
+
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input type="username" id="username" name="username" class="form-control" placeholder="Username  (小于36字符长度，支持汉字、字母、数字及类似：-、_、.等合法字符集)" required>
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password  (不得少于6位，大小写字母和数字两两组合或三者组合)" required>
+
+        <label for="rePass" class="sr-only">Password</label>
+        <input type="password" id="repass" name="repass" class="form-control" placeholder="Password  again" required>
+
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign up</button>
+
+      </form>
+    </div>
+
+  </body>
+</html>
